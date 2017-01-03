@@ -1,0 +1,85 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "MedicationRequest/CarePlan-MedicationRequest-1"
+      },
+      "resource": {
+        "resourceType": "MedicationRequest",
+        "id": "CarePlan-MedicationRequest-1",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>MedicationRequest: Metformin hydrochloride 1000 MG Extended Release Oral Tablet</div></div>"
+        },
+        "status": "active",
+        "stage": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ValueSet/medication-request-stage",
+              "code": "original-order",
+              "display": "Original Order"
+            }
+          ],
+          "text": "Original Order"
+        },
+        "medicationCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+              "code": "1810997",
+              "display": "Metformin hydrochloride 1000 MG Extended Release Oral Tablet"
+            }
+          ],
+          "text": "Metformin hydrochloride 1000 MG Extended Release Oral Tablet"
+        },
+        "patient": {
+          "reference": "Patient/CarePlan-Patient-1",
+          "display": "Bob Anyman male 1954-09-17"
+        },
+        "dateWritten": "2016-11-30",
+        "requester": {
+          "reference": "Practioner/CarePlan-Practitioner-1",
+          "display": "Patricia Primary, MD"
+        },
+        "dosageInstruction": [
+          {
+            "text": "Take 1 tablet (1000 mg total) by mouth with evening meal.",
+            "timing": {
+              "repeat": {
+                "boundsPeriod": {
+                  "start": "2016-12-01",
+                  "end": "2017-02-28"
+                },
+                "frequency": 1,
+                "period": 1,
+                "periodUnit": "d"
+              }
+            },
+            "route": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "26643006",
+                  "display": "Oral route"
+                }
+              ],
+              "text": "Oral route"
+            },
+            "doseQuantity": {
+              "value": 1000,
+              "unit": "mg"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
