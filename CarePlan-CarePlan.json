@@ -50,7 +50,9 @@
             "reference": {
               "reference": "MedicationRequest/CarePlan-MedicationRequest-1",
               "display": "Metformin hydrochloride 1000 MG Extended Release Oral Tablet"
-            },
+            }
+          },
+          {
             "detail": {
               "category": {
                 "coding": [
