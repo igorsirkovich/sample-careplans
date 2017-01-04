@@ -2,8 +2,7 @@
 
 Sample 🔥FHIR CarePlan and related resources for chronic care scenarios.
 
-The sample resources are based on a storyboard for chronic conditions to illustrate the clinical documentation by care providers, and communication flow between a patient and care team members involved in his/her long term care. The chronic condition selected for the first storyboard is Type II Diabetes Mellitus (Type II DM).
-- The [Type II DM storyboard](./‘Care Plan Storyboard - Diabetes Mellitus.pdf’) document is included in this repository.
+The sample resources are based on a storyboard for chronic conditions to illustrate the clinical documentation by care providers, and communication flow between a patient and care team members involved in his/her long term care. The chronic condition selected for the first storyboard is [Type II Diabetes Mellitus (Type II DM)](./Care Plan Storyboard - Diabetes Mellitus.pdf).
 
 Because FHIR is still evolving there may be different versions of the resources:
 
