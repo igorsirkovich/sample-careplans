@@ -1,0 +1,257 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/CarePlan-VitalSign-1"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "CarePlan-VitalSign-1",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Observation"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "vital-signs"
+              }
+            ],
+            "text": "Vital Signs"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8302-2",
+              "display": "Body height"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/CarePlan-Patient-1",
+          "display": "Bob Anyman"
+        },
+        "effectiveDateTime": "2016-11-30",
+        "performer": [
+          {
+            "reference": "Practitioner/CarePlan-Practitioner-1",
+            "display": "Patricia Primary, MD"
+          }
+        ],
+        "valueQuantity": {
+          "value": 67,
+          "unit": "in",
+          "system": "http://unitsofmeasure.org/",
+          "code": "[in_i]"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/CarePlan-VitalSign-2"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "CarePlan-VitalSign-2",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Observation"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "vital-signs"
+              }
+            ],
+            "text": "Vital Signs"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/CarePlan-Patient-1",
+          "display": "Bob Anyman"
+        },
+        "effectiveDateTime": "2016-11-30",
+        "performer": [
+          {
+            "reference": "Practitioner/CarePlan-Practitioner-1",
+            "display": "Patricia Primary, MD"
+          }
+        ],
+        "valueQuantity": {
+          "value": 216,
+          "unit": "lb",
+          "system": "http://unitsofmeasure.org/",
+          "code": "[lb_av]"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/CarePlan-VitalSign-3"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "CarePlan-VitalSign-3",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Observation"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "vital-signs"
+              }
+            ],
+            "text": "Vital Signs"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "39156-5",
+              "display": "BMI"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/CarePlan-Patient-1",
+          "display": "Bob Anyman"
+        },
+        "effectiveDateTime": "2016-11-30",
+        "performer": [
+          {
+            "reference": "Practitioner/CarePlan-Practitioner-1",
+            "display": "Patricia Primary, MD"
+          }
+        ],
+        "valueQuantity": {
+          "value": 33,
+          "unit": "kg/m2",
+          "system": "http://unitsofmeasure.org/",
+          "code": "kg/m2"
+        }
+      }
+    },
+    {
+      "request": {
+        "method": "PUT",
+        "url": "Observation/CarePlan-VitalSign-4"
+      },
+      "resource": {
+        "resourceType": "Observation",
+        "id": "CarePlan-VitalSign-4",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Observation"
+          ]
+        },
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://hl7.org/fhir/observation-category",
+                "code": "vital-signs"
+              }
+            ],
+            "text": "Vital Signs"
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/CarePlan-Patient-1",
+          "display": "Bob Anyman"
+        },
+        "effectiveDateTime": "2016-11-30",
+        "performer": [
+          {
+            "reference": "Practitioner/CarePlan-Practitioner-1",
+            "display": "Patricia Primary, MD"
+          }
+        ],
+        "bodySite": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "368209003",
+              "display": "Right arm"
+            }
+          ]
+        },
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 164,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 108,
+              "unit": "mmHg",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

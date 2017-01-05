@@ -1,79 +1,79 @@
 {
-    "resourceType": "Bundle",
-    "type": "batch",
-    "entry": [
-        {
-            "request": {
-            	"method": "PUT",
-               "url": "CareTeam/CarePlan-CareTeam-1"
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "CareTeam/CarePlan-CareTeam-1"
+      },
+      "resource": {
+        "resourceType": "CareTeam",
+        "id": "CarePlan-CareTeam-1",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/CareTeam"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>CareTeam</div></div>"
+        },
+        "subject": {
+          "reference": "Patient/CarePlan-Patient-1",
+          "display": "Gary Anyman male 1954-09-17"
+        },
+        "participant": [
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "446050000",
+                  "display": "Primary care physician"
+                }
+              ],
+              "text": "Primary care physician"
             },
-              "resource": {
-              "resourceType": "CareTeam",
-              "id": "CarePlan-CareTeam-1",
-              "meta": {
-              "profile": [
-                          "http://hl7.org/fhir/StructureDefinition/CareTeam"
-                          ]
-              },
-              "text": {
-              "status": "additional",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>CareTeam</div></div>"
-              },
-              "subject": {
-              "reference": "Patient/CarePlan-Patient-1",
-              "display": "Gary Anyman male 1954-09-17"
-              },
-              "participant": [
-                              {
-                              "role": {
-                              "coding": [
-                                         {
-                                         "system": "http://snomed.info/sct",
-                                         "code": "446050000",
-                                         "display": "Primary care physician (occupation)"
-                                         }
-                                         ],
-                              "text": "Primary care physician (occupation)"
-                              },
-                              "member": {
-                              "reference": "CarePlan-Practitioner-1",
-                              "display": "Patricia Primary, MD"
-                              }
-                              },
-                              {
-                              "role": {
-                              "coding": [
-                                         {
-                                         "system": "http://snomed.info/sct",
-                                         "code": "73265009",
-                                         "display": "Nursing aid"
-                                         }
-                                         ],
-                              "text": "Nursing aid"
-                              },
-                              "member": {
-                              "reference": "CarePlan-Practitioner-1",
-                              "display": "Annie Aid-Giver "
-                              }
-                              },
-                              {
-                              "role": {
-                              "coding": [
-                                         {
-                                         "system": "http://snomed.info/sct",
-                                         "code": "133932002",
-                                         "display": "Caregiver"
-                                         }
-                                         ],
-                              "text": "Caregiver"
-                              },
-                              "member": {
-                              "reference": "CarePlan-RelatedPerson-1",
-                              "display": "RelatedPerson"
-                              }
-                              }
-                              ]
+            "member": {
+              "reference": "CarePlan-Practitioner-1",
+              "display": "Patricia Primary, MD"
             }
-        }
-    ]
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "73265009",
+                  "display": "Nursing aid"
+                }
+              ],
+              "text": "Nursing aid"
+            },
+            "member": {
+              "reference": "CarePlan-Practitioner-2",
+              "display": "Annie Aid-Giver "
+            }
+          },
+          {
+            "role": {
+              "coding": [
+                {
+                  "system": "http://snomed.info/sct",
+                  "code": "133932002",
+                  "display": "Caregiver"
+                }
+              ],
+              "text": "Caregiver"
+            },
+            "member": {
+              "reference": "CarePlan-RelatedPerson-1",
+              "display": "RelatedPerson"
+            }
+          }
+        ]
+      }
+    }
+  ]
 }

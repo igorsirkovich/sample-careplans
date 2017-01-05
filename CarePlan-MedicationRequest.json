@@ -46,7 +46,7 @@
         },
         "dateWritten": "2016-11-30",
         "requester": {
-          "reference": "Practioner/CarePlan-Practitioner-1",
+          "reference": "Practitioner/CarePlan-Practitioner-1",
           "display": "Patricia Primary, MD"
         },
         "dosageInstruction": [
