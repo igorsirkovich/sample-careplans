@@ -17,7 +17,7 @@
         },
         "text": {
           "status": "additional",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>MedicationRequest: Metformin hydrochloride 1000 MG Extended Release Oral Tablet</div></div>"
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>MedicationRequest: Metformin hydrochloride 500 MG Oral Tablet</div></div>"
         },
         "status": "active",
         "stage": {
@@ -34,11 +34,11 @@
           "coding": [
             {
               "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
-              "code": "1810997",
-              "display": "Metformin hydrochloride 1000 MG Extended Release Oral Tablet"
+              "code": "860974",
+              "display": "Metformin hydrochloride 500 MG Oral Tablet"
             }
           ],
-          "text": "Metformin hydrochloride 1000 MG Extended Release Oral Tablet"
+          "text": "Metformin hydrochloride 500 MG Oral Tablet"
         },
         "patient": {
           "reference": "Patient/CarePlan-Patient-1",
@@ -51,14 +51,14 @@
         },
         "dosageInstruction": [
           {
-            "text": "Take 1 tablet (1000 mg total) by mouth with evening meal.",
+            "text": "Take metformin 500mg tablets twice a day, one with the breakfast and the second with the dinner.",
             "timing": {
               "repeat": {
                 "boundsPeriod": {
                   "start": "2016-12-01",
                   "end": "2017-02-28"
                 },
-                "frequency": 1,
+                "frequency": 2,
                 "period": 1,
                 "periodUnit": "d"
               }
@@ -74,7 +74,7 @@
               "text": "Oral route"
             },
             "doseQuantity": {
-              "value": 1000,
+              "value": 500,
               "unit": "mg"
             }
           }

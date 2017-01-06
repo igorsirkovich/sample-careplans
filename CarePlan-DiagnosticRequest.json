@@ -19,16 +19,8 @@
           "status": "generated",
           "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>DiagnosticRequest</div></div>"
         },
-        "stage": {
-          "coding": [
-            {
-              "system": "http://hl7.org/fhir/request-stage",
-              "code": "plan",
-              "display": "Plan"
-            }
-          ],
-          "text": "Plan"
-        },
+        "status": "active",
+        "intent": "plan",
         "code": {
           "coding": [
             {
@@ -39,13 +31,13 @@
           ],
           "text": "Hemoglobin A1c in Blood"
         },
-        "subject": {
-          "reference": "Patient/CarePlan-Patient-1",
-          "display": "Bob Anyman"
-        },
         "occurrencePeriod": {
           "start": "2016-12-15",
           "end": "2016-12-31"
+        },
+        "subject": {
+          "reference": "Patient/CarePlan-Patient-1",
+          "display": "Bob Anyman"
         },
         "requester": {
           "reference": "Practitioner/CarePlan-Practitioner-1",

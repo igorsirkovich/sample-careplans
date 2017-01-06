@@ -2,7 +2,7 @@
 
 Sample 🔥FHIR CarePlan and related resources for chronic care scenarios.
 
-The sample resources are based on a storyboard for chronic conditions to illustrate the clinical documentation by care providers, and communication flow between a patient and care team members involved in his/her long term care. The chronic condition selected for the first storyboard is [Type II Diabetes Mellitus (Type II DM)](./Care Plan Storyboard - Diabetes Mellitus.pdf).
+The sample resources are based on a storyboard for chronic conditions that illustrates the clinical documentation used and created by care providers, and communication flow between a patient and care team members involved in his/her long term care. The chronic condition selected for the first storyboard is [Type II Diabetes Mellitus (Type II DM)](./Care Plan Storyboard - Diabetes Mellitus.pdf).
 
 Because FHIR is still evolving there may be different versions of the resources:
 
@@ -11,8 +11,11 @@ Because FHIR is still evolving there may be different versions of the resources:
 
 Loading these files into your FHIR server
 -----------------------------------------
-- TODO describe order dependencies for loading
-- FHIR batch Bundles
+Each file is a FHIR transaction Bundle.  A shell script is included that loads all bundles into your FHIR server:
+
+load-careplans http://fhir3.healthintersections.com.au/open > log.txt
+
+or load-careplans http://localhost:8080/fhir > log.txt
 
 License
 -------
