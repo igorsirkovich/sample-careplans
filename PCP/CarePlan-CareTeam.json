@@ -36,7 +36,7 @@
               "text": "Primary care physician"
             },
             "member": {
-              "reference": "CarePlan-Practitioner-1",
+              "reference": "Practitioner/CarePlan-Practitioner-1",
               "display": "Patricia Primary, MD"
             }
           },
@@ -52,7 +52,7 @@
               "text": "Nursing aid"
             },
             "member": {
-              "reference": "CarePlan-Practitioner-2",
+              "reference": "Practitioner/CarePlan-Practitioner-2",
               "display": "Annie Aid-Giver "
             }
           },
@@ -68,7 +68,7 @@
               "text": "Caregiver"
             },
             "member": {
-              "reference": "CarePlan-RelatedPerson-1",
+              "reference": "RelatedPerson/CarePlan-RelatedPerson-1",
               "display": "RelatedPerson"
             }
           }

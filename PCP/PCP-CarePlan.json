@@ -79,7 +79,7 @@
           },
           {
             "reference": {
-              "reference": "MedicationRequest/CarePlan-DiagnosticRequest-1",
+              "reference": "DiagnosticRequest/CarePlan-DiagnosticRequest-1",
               "display": "Hemoglobin A1c in Blood"
             }
           },
