@@ -13,9 +13,9 @@ Loading these files into your FHIR server
 -----------------------------------------
 Each file is a FHIR transaction Bundle.  A shell script is included that loads all bundles into your FHIR server:
 
-load-careplans http://fhir3.healthintersections.com.au/open > log.txt
+load-all http://fhir3.healthintersections.com.au/open > log.txt
 
-or load-careplans http://localhost:8080/fhir > log.txt
+or load-all http://localhost:8080/fhir > log.txt
 
 License
 -------

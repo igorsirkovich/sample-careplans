@@ -1,0 +1,129 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/Dietitian-CarePlan-1"
+      },
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "Dietitian-CarePlan-1",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/CarePlan"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Dietitian CarePlan</div></div>"
+        },
+        "subject": {
+          "reference": "Patient/CarePlan-Patient-1",
+          "display": "Gary Anyman"
+        },
+        "status": "active",
+        "goal": [
+          {
+            "reference": "Goal/CarePlan-Goal-1",
+            "display": "Hemoglobin A1c < 7.0"
+          }
+        ],
+        "addresses": [
+          {
+            "reference": "Condition/CarePlan-Condition-1",
+            "display": "Type 2 diabetes mellitus"
+          },
+          {
+            "reference": "Condition/CarePlan-HealthConcern-1",
+            "display": "Inability to maintain effective blood glucose control"
+          },
+          {
+            "reference": "Condition/CarePlan-HealthConcern-2",
+            "display": "Obesity"
+          }
+        ],
+        "careTeam": [
+          {
+            "reference": "CareTeam/CarePlan-CareTeam-1"
+          }
+        ],
+        "activity": [
+          {
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "observation",
+                    "display": "Observation"
+                  }
+                ],
+                "text": "Observation"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "55284-4",
+                    "display": "Blood pressure systolic and diastolic"
+                  }
+                ],
+                "text": "Blood pressure systolic and diastolic"
+              },
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2016-11-30",
+                    "end": "2017-12-31"
+                  },
+                  "frequency": 1,
+                  "period": 1,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          },
+          {
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "observation",
+                    "display": "Observation"
+                  }
+                ],
+                "text": "Observation"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://loinc.org",
+                    "code": "29463-7",
+                    "display": "Body weight"
+                  }
+                ],
+                "text": "Body weight"
+              },
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2016-11-30",
+                    "end": "2017-12-31"
+                  },
+                  "frequency": 1,
+                  "period": 7,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

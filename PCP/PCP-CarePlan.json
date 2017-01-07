@@ -5,11 +5,11 @@
     {
       "request": {
         "method": "PUT",
-        "url": "CarePlan/CarePlan-CarePlan-1"
+        "url": "CarePlan/PCP-CarePlan-1"
       },
       "resource": {
         "resourceType": "CarePlan",
-        "id": "CarePlan-CarePlan-1",
+        "id": "PCP-CarePlan-1",
         "meta": {
           "profile": [
             "http://hl7.org/fhir/StructureDefinition/CarePlan"
@@ -24,6 +24,15 @@
           "display": "Gary Anyman"
         },
         "status": "active",
+        "relatedPlan": [
+          {
+            "code": "includes",
+            "plan": {
+              "reference": "CarePlan/Dietitian-CarePlan-1",
+              "display": "Dietitian Care Plan"
+            }
+          }
+        ],
         "goal": [
           {
             "reference": "Goal/CarePlan-Goal-1",
