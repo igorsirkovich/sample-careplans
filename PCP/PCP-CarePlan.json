@@ -31,6 +31,13 @@
               "reference": "CarePlan/Dietitian-CarePlan-1",
               "display": "Dietitian Care Plan"
             }
+          },
+          {
+            "code": "includes",
+            "plan": {
+              "reference": "CarePlan/Podiatry-CarePlan-1",
+              "display": "Podiatry Care Plan"
+            }
           }
         ],
         "goal": [

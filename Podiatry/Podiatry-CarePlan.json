@@ -1,0 +1,88 @@
+{
+  "resourceType": "Bundle",
+  "type": "batch",
+  "entry": [
+    {
+      "request": {
+        "method": "PUT",
+        "url": "CarePlan/Podiatry-CarePlan-1"
+      },
+      "resource": {
+        "resourceType": "CarePlan",
+        "id": "Podiatry-CarePlan-1",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/CarePlan"
+          ]
+        },
+        "text": {
+          "status": "additional",
+          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Podiatry CarePlan</div></div>"
+        },
+        "subject": {
+          "reference": "Patient/CarePlan-Patient-1",
+          "display": "Gary Anyman"
+        },
+        "status": "active",
+        "goal": [
+          {
+            "reference": "Goal/CarePlan-Goal-1",
+            "display": "Hemoglobin A1c < 7.0"
+          }
+        ],
+        "addresses": [
+          {
+            "reference": "Condition/CarePlan-Condition-1",
+            "display": "Type 2 diabetes mellitus"
+          },
+          {
+            "reference": "Condition/CarePlan-HealthConcern-3",
+            "display": "Peripheral vascular and neuropathy risks leading to heightened foot complication risks"
+          }
+        ],
+        "careTeam": [
+          {
+            "reference": "CareTeam/CarePlan-CareTeam-1"
+          }
+        ],
+          {
+            "detail": {
+              "category": {
+                "coding": [
+                  {
+                    "system": "http://hl7.org/fhir/care-plan-activity-category",
+                    "code": "observation",
+                    "display": "Observation"
+                  }
+                ],
+                "text": "Observation"
+              },
+              "code": {
+                "coding": [
+                  {
+                    "system": "http://snomed.info/sct",
+                    "code": "282097004",
+                    "display": "Ability to walk"
+                  }
+                ],
+                "text": "Ability to walk"
+              },
+              "status": "in-progress",
+              "scheduledTiming": {
+                "repeat": {
+                  "boundsPeriod": {
+                    "start": "2016-11-30",
+                    "end": "2017-12-31"
+                  },
+                  "frequency": 1,
+                  "period": 7,
+                  "periodUnit": "d"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
