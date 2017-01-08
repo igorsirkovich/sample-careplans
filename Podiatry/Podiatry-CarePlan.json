@@ -45,6 +45,7 @@
             "reference": "CareTeam/CarePlan-CareTeam-1"
           }
         ],
+        "activity": [
           {
             "detail": {
               "category": {

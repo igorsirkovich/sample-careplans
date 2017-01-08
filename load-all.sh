@@ -20,4 +20,5 @@ curl   -X POST $1 -H 'Content-type: application/json+fhir' -H 'Accept: applicati
 curl   -X POST $1 -H 'Content-type: application/json+fhir' -H 'Accept: application/json+fhir' --data @PCP/CarePlan-CareTeam.json
 
 curl   -X POST $1 -H 'Content-type: application/json+fhir' -H 'Accept: application/json+fhir' --data @Dietitian/Dietitian-CarePlan.json
+curl   -X POST $1 -H 'Content-type: application/json+fhir' -H 'Accept: application/json+fhir' --data @Podiatry/Podiatry-CarePlan.json
 curl   -X POST $1 -H 'Content-type: application/json+fhir' -H 'Accept: application/json+fhir' --data @PCP/PCP-CarePlan.json
