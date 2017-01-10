@@ -1,0 +1,34 @@
+{
+  "resourceType": "Practitioner",
+  "id": "CarePlan-Practitioner-2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/Practitioner"
+    ]
+  },
+  "active": true,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Annie Aid-Giver </div></div>"
+  },
+  "name": [
+    {
+      "use": "usual",
+      "family": "Aid-Giver",
+      "given": [
+        "Annie"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "555-1234",
+      "use": "mobile"
+    },
+    {
+      "system": "email",
+      "value": "annie.giver@woohoo.com"
+    }
+  ]
+}

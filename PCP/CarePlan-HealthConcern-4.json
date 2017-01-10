@@ -1,0 +1,34 @@
+{
+  "resourceType": "Condition",
+  "id": "CarePlan-HealthConcern-4",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Provisional diagnosis high blood pressure with past history of borderline high blood pressure.</div></div>"
+  },
+  "clinicalStatus": "active",
+  "verificationStatus": "confirmed",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/us/core/CodeSystem/condition-category",
+          "code": "health-concern"
+        }
+      ],
+      "text": "Health Concern"
+    }
+  ],
+  "code": {
+    "text": "Provisional diagnosis high blood pressure with past history of borderline high blood pressure"
+  },
+  "subject": {
+    "reference": "Patient/CarePlan-Patient-1",
+    "display": "Bob Anyman"
+  },
+  "onsetDateTime": "2016-11-30"
+}

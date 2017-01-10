@@ -1,0 +1,33 @@
+{
+  "resourceType": "Practitioner",
+  "id": "CarePlan-Practitioner-1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/Practitioner"
+    ]
+  },
+  "active": true,
+  "name": [
+    {
+      "text": "Patricia Primary, MD",
+      "family": "Primary",
+      "given": [
+        "Patricia"
+      ],
+      "suffix": [
+        "MD"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "555-1234",
+      "use": "mobile"
+    },
+    {
+      "system": "email",
+      "value": "dr.patricia.primary@woohoo.com"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "resourceType": "Practitioner",
+  "id": "CarePlan-Practitioner-3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/Practitioner"
+    ]
+  },
+  "active": true,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Nutrish Foods</div></div>"
+  },
+  "name": [
+    {
+      "use": "usual",
+      "family": "Foods",
+      "given": [
+        "Nutrish"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "555-2341",
+      "use": "mobile"
+    },
+    {
+      "system": "email",
+      "value": "nutrish.foods@woohoo.com"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "resourceType": "Goal",
+  "id": "CarePlan-Goal-1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/Goal"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Goal: Hemoglobin A1c &lt; 7.0</div></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/goal-target",
+      "measure": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "4548-4",
+            "display": "Hemoglobin A1c total in Blood"
+          }
+        ],
+        "text": "Hemoglobin A1c total in Blood"
+      },
+      "valueQuantity": {
+        "value": "7.0",
+        "comparator": "<",
+        "unit": "%",
+        "system": "http://unitsofmeasure.org/",
+        "code": "%"
+      }
+    }
+  ],
+  "startDate": "2016-11-30",
+  "status": "in-progress",
+  "priority": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/goal-priority",
+        "code": "high",
+        "display": "high"
+      }
+    ],
+    "text": "high"
+  },
+  "subject": {
+    "reference": "Patient/CarePlan-Patient-1",
+    "display": "Bob Anyman male 1954-09-17"
+  },
+  "author": {
+    "reference": "CarePlan-Practitioner-1",
+    "display": "Patricia Primary, MD"
+  },
+  "addresses": [
+    {
+      "reference": "Condition/CarePlan-Condition-1",
+      "display": "Type 2 diabetes mellitus"
+    }
+  ],
+  "description": {
+    "text": "Hemoglobin A1c < 7.0"
+  },
+  "note": [
+    {
+      "text": "Regularly monitor A1C levels toward overall goal of 6.0."
+    }
+  ]
+}

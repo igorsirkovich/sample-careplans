@@ -1,0 +1,157 @@
+{
+  "resourceType": "CarePlan",
+  "id": "PCP-CarePlan-1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/CarePlan"
+    ]
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>PCP CarePlan for Diabetes</div></div>"
+  },
+  "subject": {
+    "reference": "Patient/CarePlan-Patient-1",
+    "display": "Gary Anyman"
+  },
+  "status": "active",
+  "relatedPlan": [
+    {
+      "code": "includes",
+      "plan": {
+        "reference": "CarePlan/Dietitian-CarePlan-1",
+        "display": "Dietitian Care Plan"
+      }
+    },
+    {
+      "code": "includes",
+      "plan": {
+        "reference": "CarePlan/Podiatry-CarePlan-1",
+        "display": "Podiatry Care Plan"
+      }
+    }
+  ],
+  "goal": [
+    {
+      "reference": "Goal/CarePlan-Goal-1",
+      "display": "Hemoglobin A1c < 7.0"
+    }
+  ],
+  "addresses": [
+    {
+      "reference": "Condition/CarePlan-Condition-1",
+      "display": "Type 2 diabetes mellitus"
+    },
+    {
+      "reference": "Condition/CarePlan-HealthConcern-1",
+      "display": "Inability to maintain effective blood glucose control"
+    },
+    {
+      "reference": "Condition/CarePlan-HealthConcern-2",
+      "display": "Obesity"
+    },
+    {
+      "reference": "Condition/CarePlan-HealthConcern-3",
+      "display": "Peripheral vascular and neuropathy risks leading to heightened foot complication risks"
+    },
+    {
+      "reference": "Condition/CarePlan-HealthConcern-4",
+      "display": "Provisional diagnosis high blood pressure with past history of borderline high blood pressure"
+    },
+    {
+      "reference": "Condition/CarePlan-HealthConcern-5",
+      "display": "Health literacy deficit which may impact self-care willingness and ability to achieve goals"
+    }
+  ],
+  "careTeam": [
+    {
+      "reference": "CareTeam/CarePlan-CareTeam-1"
+    }
+  ],
+  "activity": [
+    {
+      "reference": {
+        "reference": "MedicationRequest/CarePlan-MedicationRequest-1",
+        "display": "Metformin hydrochloride 1000 MG Extended Release Oral Tablet"
+      }
+    },
+    {
+      "reference": {
+        "reference": "DiagnosticRequest/CarePlan-DiagnosticRequest-1",
+        "display": "Hemoglobin A1c in Blood"
+      }
+    },
+    {
+      "detail": {
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/care-plan-activity-category",
+              "code": "observation",
+              "display": "Observation"
+            }
+          ],
+          "text": "Observation"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "55284-4",
+              "display": "Blood pressure systolic and diastolic"
+            }
+          ],
+          "text": "Blood pressure systolic and diastolic"
+        },
+        "status": "in-progress",
+        "scheduledTiming": {
+          "repeat": {
+            "boundsPeriod": {
+              "start": "2016-11-30",
+              "end": "2017-12-31"
+            },
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    },
+    {
+      "detail": {
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/care-plan-activity-category",
+              "code": "observation",
+              "display": "Observation"
+            }
+          ],
+          "text": "Observation"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            }
+          ],
+          "text": "Body weight"
+        },
+        "status": "in-progress",
+        "scheduledTiming": {
+          "repeat": {
+            "boundsPeriod": {
+              "start": "2016-11-30",
+              "end": "2017-12-31"
+            },
+            "frequency": 1,
+            "period": 7,
+            "periodUnit": "d"
+          }
+        }
+      }
+    }
+  ]
+}

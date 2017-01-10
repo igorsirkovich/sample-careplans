@@ -1,0 +1,47 @@
+{
+  "resourceType": "Observation",
+  "id": "CarePlan-Observation-2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/Observation"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "laboratory"
+        }
+      ],
+      "text": "Laboratory"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "4548-4",
+        "display": "Hemoglobin A1c total in Blood"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/CarePlan-Patient-1",
+    "display": "Bob Anyman"
+  },
+  "effectiveDateTime": "2016-11-09",
+  "performer": [
+    {
+      "reference": "Practitioner/CarePlan-Practitioner-1",
+      "display": "Patricia Primary, MD"
+    }
+  ],
+  "valueQuantity": {
+    "value": "7.8",
+    "unit": "%",
+    "system": "http://unitsofmeasure.org/",
+    "code": "%"
+  }
+}

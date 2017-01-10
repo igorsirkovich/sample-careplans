@@ -1,0 +1,47 @@
+{
+  "resourceType": "Observation",
+  "id": "CarePlan-VitalSign-2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/Observation"
+    ]
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://hl7.org/fhir/observation-category",
+          "code": "vital-signs"
+        }
+      ],
+      "text": "Vital Signs"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "29463-7",
+        "display": "Body weight"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/CarePlan-Patient-1",
+    "display": "Bob Anyman"
+  },
+  "effectiveDateTime": "2016-11-30",
+  "performer": [
+    {
+      "reference": "Practitioner/CarePlan-Practitioner-1",
+      "display": "Patricia Primary, MD"
+    }
+  ],
+  "valueQuantity": {
+    "value": 216,
+    "unit": "lb",
+    "system": "http://unitsofmeasure.org/",
+    "code": "[lb_av]"
+  }
+}

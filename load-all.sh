@@ -2,23 +2,45 @@
 
 # Load all care plan resources into a single server
 
-# first command line argument = FHIR server endpoint URL
+# arg1 = FHIR server endpoint URL
 # . load-all http://fhir3.healthintersections.com.au/open
 
-# All transaction bundles are loaded in order to allow reference resolution
+# Common resources
+. load-resource.sh $1 Practitioner Common CarePlan-Practitioner-1
+. load-resource.sh $1 Practitioner Common CarePlan-Practitioner-2
+. load-resource.sh $1 Practitioner Common CarePlan-Practitioner-3
+. load-resource.sh $1 Practitioner Common CarePlan-Practitioner-4
 
-curl   -X POST $1 -H 'Content-type: application/json+fhir' -H 'Accept: application/json+fhir' --data @Common/Common-Practitioner.json
-curl   -X POST $1 -H 'Content-type: application/json+fhir' -H 'Accept: application/json+fhir' --data @Common/Common-Patient.json
-curl   -X POST $1 -H 'Content-type: application/json+fhir' -H 'Accept: application/json+fhir' --data @Common/Common-RelatedPerson.json
+. load-resource.sh $1 Patient Common CarePlan-Patient-1
+. load-resource.sh $1 RelatedPerson Common CarePlan-RelatedPerson-1
 
-curl   -X POST $1 -H 'Content-type: application/json+fhir' -H 'Accept: application/json+fhir' --data @PCP/CarePlan-LabObservation.json
-curl   -X POST $1 -H 'Content-type: application/json+fhir' -H 'Accept: application/json+fhir' --data @PCP/CarePlan-DiagnosticRequest.json
-curl   -X POST $1 -H 'Content-type: application/json+fhir' -H 'Accept: application/json+fhir' --data @PCP/CarePlan-VitalSigns.json
-curl   -X POST $1 -H 'Content-type: application/json+fhir' -H 'Accept: application/json+fhir' --data @PCP/CarePlan-Condition.json
-curl   -X POST $1 -H 'Content-type: application/json+fhir' -H 'Accept: application/json+fhir' --data @PCP/CarePlan-Goal.json
-curl   -X POST $1 -H 'Content-type: application/json+fhir' -H 'Accept: application/json+fhir' --data @PCP/CarePlan-MedicationRequest.json
-curl   -X POST $1 -H 'Content-type: application/json+fhir' -H 'Accept: application/json+fhir' --data @PCP/CarePlan-CareTeam.json
+# PCP resources
+. load-resource.sh $1 Observation PCP CarePlan-VitalSign-1
+. load-resource.sh $1 Observation PCP CarePlan-VitalSign-2
+. load-resource.sh $1 Observation PCP CarePlan-VitalSign-3
+. load-resource.sh $1 Observation PCP CarePlan-VitalSign-4
+. load-resource.sh $1 Observation PCP CarePlan-Observation-1
+. load-resource.sh $1 Observation PCP CarePlan-Observation-2
 
-curl   -X POST $1 -H 'Content-type: application/json+fhir' -H 'Accept: application/json+fhir' --data @Dietitian/Dietitian-CarePlan.json
-curl   -X POST $1 -H 'Content-type: application/json+fhir' -H 'Accept: application/json+fhir' --data @Podiatry/Podiatry-CarePlan.json
-curl   -X POST $1 -H 'Content-type: application/json+fhir' -H 'Accept: application/json+fhir' --data @PCP/PCP-CarePlan.json
+. load-resource.sh $1 Condition PCP CarePlan-Condition-1
+. load-resource.sh $1 Condition PCP CarePlan-Condition-2
+. load-resource.sh $1 Condition PCP CarePlan-Condition-3
+. load-resource.sh $1 Condition PCP CarePlan-HealthConcern-1
+. load-resource.sh $1 Condition PCP CarePlan-HealthConcern-2
+. load-resource.sh $1 Condition PCP CarePlan-HealthConcern-3
+. load-resource.sh $1 Condition PCP CarePlan-HealthConcern-4
+. load-resource.sh $1 Condition PCP CarePlan-HealthConcern-5
+
+. load-resource.sh $1 MedicationRequest PCP CarePlan-MedicationRequest-1
+. load-resource.sh $1 DiagnosticRequest PCP CarePlan-DiagnosticRequest-1
+
+. load-resource.sh $1 Goal PCP CarePlan-Goal-1
+
+. load-resource.sh $1 CareTeam PCP CarePlan-CareTeam-1
+. load-resource.sh $1 CarePlan PCP PCP-CarePlan-1
+
+# Dietitian resources
+. load-resource.sh $1 CarePlan Dietitian Dietitian-CarePlan-1
+
+# Podiatry resources
+. load-resource.sh $1 CarePlan Podiatry Podiatry-CarePlan-1

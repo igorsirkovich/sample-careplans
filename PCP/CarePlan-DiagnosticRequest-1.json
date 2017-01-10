@@ -1,0 +1,37 @@
+{
+  "resourceType": "DiagnosticRequest",
+  "id": "CarePlan-DiagnosticRequest-1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/DiagnosticRequest"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>DiagnosticRequest</div></div>"
+  },
+  "status": "active",
+  "intent": "plan",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "55454-3",
+        "display": "Hemoglobin A1c in Blood"
+      }
+    ],
+    "text": "Hemoglobin A1c in Blood"
+  },
+  "occurrencePeriod": {
+    "start": "2016-12-15",
+    "end": "2016-12-31"
+  },
+  "subject": {
+    "reference": "Patient/CarePlan-Patient-1",
+    "display": "Bob Anyman"
+  },
+  "requester": {
+    "reference": "Practitioner/CarePlan-Practitioner-1",
+    "display": "Patricia Primary, MD"
+  }
+}

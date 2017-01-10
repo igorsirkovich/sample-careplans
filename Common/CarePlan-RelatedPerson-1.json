@@ -1,0 +1,49 @@
+{
+  "resourceType": "RelatedPerson",
+  "id": "CarePlan-RelatedPerson-1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/RelatedPerson"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>RelatedPerson</div></div>"
+  },
+  "patient": {
+    "reference": "Patient/CarePlan-Patient-1",
+    "display": "Bob Anyman male 1954-09-17"
+  },
+  "relationship": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/v3/RoleCode",
+        "code": "DAUC",
+        "display": "daughter"
+      }
+    ],
+    "text": "daughter"
+  },
+  "name": [
+    {
+      "use": "usual",
+      "family": "Smith",
+      "given": [
+        "Amy"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "555-1212",
+      "use": "mobile"
+    },
+    {
+      "system": "email",
+      "value": "amy.smith123123@gmail.com",
+      "use": "home"
+    }
+  ],
+  "gender": "female"
+}

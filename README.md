@@ -13,7 +13,7 @@ Care Plan Scenarios
 ===================
 These FHIR care plan scenarios were originally created to support the [Care Plan Track of HL7 FHIR Connectathon 14][track], held on Jan 14-15, 2017. The scenario scope and contents are expected to evolve and grow based on both clinical and technical experience.  
 
-For the Type II Diabetes scenario, the FHIR resource files are divided into four folders, where each file is a FHIR transaction Bundle that may be loaded into a FHIR server.
+For the Type II Diabetes scenario, the FHIR resource files are divided into four folders:
 
 - Common: shared content for Patients, Practitioners, RelatedPerson, and other resources
 - PCP: healthcare provider organization for patient’s Primary Care Provider (PCP)
@@ -26,11 +26,11 @@ Initially, all of these provider organization resources are loaded into a single
 
 Loading these files into your FHIR server
 -----------------------------------------
-Each file is a FHIR transaction Bundle.  A shell script is included that loads all bundles into your FHIR server:
+Each file contains a single FHIR resource.  A shell script is included that loads all resources into your FHIR server:
 
-`$ load-all http://fhir3.healthintersections.com.au/open > log.txt`
+`$. load-all http://fhir3.healthintersections.com.au/open > log.txt`
 
-or `$ load-all http://localhost:8080/fhir > log.txt`
+or `$. load-all http://localhost:8080/fhir > log.txt`
 
 License
 -------
