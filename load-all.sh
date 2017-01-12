@@ -32,7 +32,13 @@
 . load-resource.sh $1 Condition PCP CarePlan-HealthConcern-5
 
 . load-resource.sh $1 MedicationRequest PCP CarePlan-MedicationRequest-1
+. load-resource.sh $1 MedicationRequest PCP CarePlan-MedicationRequest-2
+. load-resource.sh $1 MedicationRequest PCP CarePlan-MedicationRequest-3
+
 . load-resource.sh $1 DiagnosticRequest PCP CarePlan-DiagnosticRequest-1
+
+. load-resource.sh $1 ReferralRequest PCP CarePlan-ReferralRequest-1
+. load-resource.sh $1 ReferralRequest PCP CarePlan-ReferralRequest-2
 
 . load-resource.sh $1 Goal PCP CarePlan-Goal-1
 . load-resource.sh $1 Goal PCP CarePlan-Goal-2

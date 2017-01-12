@@ -1,0 +1,73 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "CarePlan-MedicationRequest-3",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+    ]
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>MedicationRequest: atorvastatin 40 MG [Lipitor] Oral Tablet</div></div>"
+  },
+  "status": "active",
+  "stage": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/ValueSet/medication-request-stage",
+        "code": "original-order",
+        "display": "Original Order"
+      }
+    ],
+    "text": "Original Order"
+  },
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code": "617319",
+        "display": "atorvastatin 40 MG [Lipitor] Oral Tablet"
+      }
+    ],
+    "text": "atorvastatin 40 MG [Lipitor] Oral Tablet"
+  },
+  "patient": {
+    "reference": "Patient/CarePlan-Patient-1",
+    "display": "Bob Anyman male 1954-09-17"
+  },
+  "dateWritten": "2016-10-15",
+  "requester": {
+    "reference": "Practitioner/CarePlan-Practitioner-1",
+    "display": "Patricia Primary, MD"
+  },
+  "dosageInstruction": [
+    {
+      "text": "Take Lipitor 40mg tablet once a day in the evening for high cholesterol and triglyceride levels.",
+      "timing": {
+        "repeat": {
+          "boundsPeriod": {
+            "start": "2016-10-15",
+            "end": "2017-04-15"
+          },
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "route": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "26643006",
+            "display": "Oral route"
+          }
+        ],
+        "text": "Oral route"
+      },
+      "doseQuantity": {
+        "value": 40,
+        "unit": "mg"
+      }
+    }
+  ]
+}

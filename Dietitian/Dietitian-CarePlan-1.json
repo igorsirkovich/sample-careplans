@@ -15,6 +15,7 @@
     "display": "Gary Anyman"
   },
   "status": "active",
+  "description": "Dietitian plan for Type 2 Diabetes",
   "goal": [
     {
       "reference": "Goal/CarePlan-Goal-1",

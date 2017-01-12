@@ -99,7 +99,31 @@
       ],
       "reference": {
         "reference": "MedicationRequest/CarePlan-MedicationRequest-1",
-        "display": "Metformin hydrochloride 1000 MG Extended Release Oral Tablet"
+        "display": "Metformin hydrochloride 500 MG Oral Tablet"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+          "valueString": "Take twice daily"
+        }
+      ],
+      "reference": {
+        "reference": "MedicationRequest/CarePlan-MedicationRequest-2",
+        "display": "Lisinopril 10 MG Oral Tablet"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+          "valueString": "Take once per day"
+        }
+      ],
+      "reference": {
+        "reference": "MedicationRequest/CarePlan-MedicationRequest-3",
+        "display": "Lipitor 40 MG Oral Tablet"
       }
     },
     {
@@ -112,6 +136,30 @@
       "reference": {
         "reference": "DiagnosticRequest/CarePlan-DiagnosticRequest-1",
         "display": "Hemoglobin A1c in Blood"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+          "valueString": "Schedule appt with dietitian"
+        }
+      ],
+      "reference": {
+        "reference": "ReferralRequest/CarePlan-ReferralRequest-1",
+        "display": "Referral to dietitian"
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+          "valueString": "Schedule an appt with podiatrist"
+        }
+      ],
+      "reference": {
+        "reference": "ReferralRequest/CarePlan-ReferralRequest-2",
+        "display": "Referral to podiatrist"
       }
     },
     {

@@ -1,0 +1,48 @@
+{
+  "resourceType": "ReferralRequest",
+  "id": "CarePlan-ReferralRequest-2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/ReferralRequest"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>ReferralRequest to Podiatrist</div></div>"
+  },
+  "status": "active",
+  "category": "plan",
+  "reason": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "44054006",
+        "display": "Type 2 diabetes mellitus"
+      }
+    ],
+    "text": "Type 2 diabetes mellitus"
+  },
+  "description": "Foot care and patient education for new diagnosis of Type 2 Diabetes Mellitus",
+  "fulfillmentTime": {
+    "start": "2016-12-15",
+    "end": "2017-01-31"
+  },
+  "specialty": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "159034004",
+        "display": "Podiatrist"
+      }
+    ],
+    "text": "Podiatrist"
+  },
+  "patient": {
+    "reference": "Patient/CarePlan-Patient-1",
+    "display": "Bob Anyman"
+  },
+  "requester": {
+    "reference": "Practitioner/CarePlan-Practitioner-1",
+    "display": "Patricia Primary, MD"
+  }
+}

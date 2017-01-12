@@ -1,0 +1,73 @@
+{
+  "resourceType": "MedicationRequest",
+  "id": "CarePlan-MedicationRequest-2",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/us/core/StructureDefinition/us-core-medicationrequest"
+    ]
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>MedicationRequest: Lisinopril 10 MG Oral Tablet</div></div>"
+  },
+  "status": "active",
+  "stage": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/ValueSet/medication-request-stage",
+        "code": "original-order",
+        "display": "Original Order"
+      }
+    ],
+    "text": "Original Order"
+  },
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "code": "316151",
+        "display": "Lisinopril 10 MG Oral Tablet"
+      }
+    ],
+    "text": "Lisinopril 10 MG Oral Tablet"
+  },
+  "patient": {
+    "reference": "Patient/CarePlan-Patient-1",
+    "display": "Bob Anyman male 1954-09-17"
+  },
+  "dateWritten": "2016-09-20",
+  "requester": {
+    "reference": "Practitioner/CarePlan-Practitioner-1",
+    "display": "Patricia Primary, MD"
+  },
+  "dosageInstruction": [
+    {
+      "text": "Take Lisinopril 10mg tablets twice a day for high blood pressure, one with the breakfast and the second with the dinner.",
+      "timing": {
+        "repeat": {
+          "boundsPeriod": {
+            "start": "2016-09-20",
+            "end": "2017-03-20"
+          },
+          "frequency": 2,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "route": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "26643006",
+            "display": "Oral route"
+          }
+        ],
+        "text": "Oral route"
+      },
+      "doseQuantity": {
+        "value": 10,
+        "unit": "mg"
+      }
+    }
+  ]
+}
