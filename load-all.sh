@@ -35,6 +35,11 @@
 . load-resource.sh $1 DiagnosticRequest PCP CarePlan-DiagnosticRequest-1
 
 . load-resource.sh $1 Goal PCP CarePlan-Goal-1
+. load-resource.sh $1 Goal PCP CarePlan-Goal-2
+. load-resource.sh $1 Goal PCP CarePlan-Goal-3
+. load-resource.sh $1 Goal PCP CarePlan-Goal-4
+. load-resource.sh $1 Goal PCP CarePlan-Goal-5
+. load-resource.sh $1 Goal PCP CarePlan-Goal-6
 
 . load-resource.sh $1 CareTeam PCP CarePlan-CareTeam-1
 . load-resource.sh $1 CarePlan PCP PCP-CarePlan-1

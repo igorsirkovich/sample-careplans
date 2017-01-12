@@ -15,6 +15,7 @@
     "display": "Gary Anyman"
   },
   "status": "active",
+  "description": "Manage Type 2 Diabetes",
   "relatedPlan": [
     {
       "code": "includes",
@@ -34,7 +35,27 @@
   "goal": [
     {
       "reference": "Goal/CarePlan-Goal-1",
-      "display": "Hemoglobin A1c < 7.0"
+      "display": "Hemoglobin A1c < 7.0%"
+    },
+    {
+      "reference": "Goal/CarePlan-Goal-2",
+      "display": "Glucose < 108 mg/dL"
+    },
+    {
+      "reference": "Goal/CarePlan-Goal-3",
+      "display": "Body weight < 175 lb"
+    },
+    {
+      "reference": "Goal/CarePlan-Goal-4",
+      "display": "Improve and maintain optimal foot health"
+    },
+    {
+      "reference": "Goal/CarePlan-Goal-5",
+      "display": "Maintain blood pressure below 140/90 mmHg"
+    },
+    {
+      "reference": "Goal/CarePlan-Goal-6",
+      "display": "Address patient knowledge deficit on diabetic self-care"
     }
   ],
   "addresses": [
@@ -70,18 +91,36 @@
   ],
   "activity": [
     {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+          "valueString": "Take twice daily"
+        }
+      ],
       "reference": {
         "reference": "MedicationRequest/CarePlan-MedicationRequest-1",
         "display": "Metformin hydrochloride 1000 MG Extended Release Oral Tablet"
       }
     },
     {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+          "valueString": "Schedule a blood test"
+        }
+      ],
       "reference": {
         "reference": "DiagnosticRequest/CarePlan-DiagnosticRequest-1",
         "display": "Hemoglobin A1c in Blood"
       }
     },
     {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+          "valueString": "Take your blood pressure"
+        }
+      ],
       "detail": {
         "category": {
           "coding": [
@@ -118,6 +157,12 @@
       }
     },
     {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+          "valueString": "Weigh yourself"
+        }
+      ],
       "detail": {
         "category": {
           "coding": [
@@ -148,6 +193,48 @@
             },
             "frequency": 1,
             "period": 7,
+            "periodUnit": "d"
+          }
+        }
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+          "valueString": "Check your blood sugar"
+        }
+      ],
+      "detail": {
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/care-plan-activity-category",
+              "code": "observation",
+              "display": "Observation"
+            }
+          ],
+          "text": "Observation"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "2339-0",
+              "display": "Glucose [Mass/volume] in Blood"
+            }
+          ],
+          "text": "Blood sugar level"
+        },
+        "status": "in-progress",
+        "scheduledTiming": {
+          "repeat": {
+            "boundsPeriod": {
+              "start": "2016-11-30",
+              "end": "2017-12-31"
+            },
+            "frequency": 3,
+            "period": 1,
             "periodUnit": "d"
           }
         }

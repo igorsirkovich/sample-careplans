@@ -1,0 +1,47 @@
+{
+  "resourceType": "Goal",
+  "id": "CarePlan-Goal-5",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/Goal"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Goal: Maintain blood pressure control with blood pressure readings below 140/90 mmHg; diagnosis of high blood pressure is established by more than one reading of above 140/90 mm Hg within a 4 week period</div></div>"
+  },
+  "startDate": "2016-11-30",
+  "status": "in-progress",
+  "priority": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/goal-priority",
+        "code": "high",
+        "display": "high"
+      }
+    ],
+    "text": "high"
+  },
+  "subject": {
+    "reference": "Patient/CarePlan-Patient-1",
+    "display": "Bob Anyman male 1954-09-17"
+  },
+  "author": {
+    "reference": "CarePlan-Practitioner-1",
+    "display": "Patricia Primary, MD"
+  },
+  "addresses": [
+    {
+      "reference": "Condition/CarePlan-Condition-1",
+      "display": "Type 2 diabetes mellitus"
+    }
+  ],
+  "description": {
+    "text": "Maintain blood pressure below 140/90 mmHg"
+  },
+  "note": [
+    {
+      "text": "Maintain blood pressure control with blood pressure readings below 140/90 mmHg; diagnosis of high blood pressure is established by more than one reading of above 140/90 mm Hg within a 4 week period"
+    }
+  ]
+}
