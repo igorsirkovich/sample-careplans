@@ -48,10 +48,13 @@
 . load-resource.sh $1 Goal PCP CarePlan-Goal-6
 
 . load-resource.sh $1 CareTeam PCP CarePlan-CareTeam-1
-. load-resource.sh $1 CarePlan PCP PCP-CarePlan-1
+
 
 # Dietitian resources
 . load-resource.sh $1 CarePlan Dietitian Dietitian-CarePlan-1
 
 # Podiatry resources
 . load-resource.sh $1 CarePlan Podiatry Podiatry-CarePlan-1
+
+# load PCP plan last because it contains references to included care plans
+. load-resource.sh $1 CarePlan PCP PCP-CarePlan-1

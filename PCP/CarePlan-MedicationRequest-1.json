@@ -29,7 +29,7 @@
         "display": "Metformin hydrochloride 500 MG Oral Tablet"
       }
     ],
-    "text": "Metformin hydrochloride 500 MG Oral Tablet"
+    "text": "Metformin 500 MG Oral Tablet"
   },
   "patient": {
     "reference": "Patient/CarePlan-Patient-1",
@@ -42,7 +42,7 @@
   },
   "dosageInstruction": [
     {
-      "text": "Take metformin 500mg tablets twice a day, one with the breakfast and the second with the dinner.",
+      "text": "Take metformin 500mg tablets twice a day to control high blood sugar, one with breakfast and the second with dinner. Metformin works by helping to restore your body's proper response to the insulin you naturally produce. It also decreases the amount of sugar that your liver makes and that your stomach/intestines absorb.",
       "timing": {
         "repeat": {
           "boundsPeriod": {

@@ -163,12 +163,6 @@
       }
     },
     {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
-          "valueString": "Take your blood pressure"
-        }
-      ],
       "detail": {
         "category": {
           "coding": [
@@ -188,8 +182,9 @@
               "display": "Blood pressure systolic and diastolic"
             }
           ],
-          "text": "Blood pressure systolic and diastolic"
+          "text": "Blood Pressure"
         },
+        "description": "Measure your blood pressure every morning with your arm relaxed at your side or on a table.",
         "status": "in-progress",
         "scheduledTiming": {
           "repeat": {
@@ -208,7 +203,7 @@
       "extension": [
         {
           "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
-          "valueString": "Weigh yourself"
+          "valueString": "After urinating, before breakfast"
         }
       ],
       "detail": {
@@ -230,8 +225,9 @@
               "display": "Body weight"
             }
           ],
-          "text": "Body weight"
+          "text": "Weight"
         },
+        "description": "It is very important to weight yourself each morning, after going to the bathroom and before breakfast. Increased weight can be a sign that you are retaining fluid and can lead to worsening heart failure.",
         "status": "in-progress",
         "scheduledTiming": {
           "repeat": {
@@ -247,12 +243,6 @@
       }
     },
     {
-      "extension": [
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
-          "valueString": "Check your blood sugar"
-        }
-      ],
       "detail": {
         "category": {
           "coding": [
@@ -282,6 +272,85 @@
               "end": "2017-12-31"
             },
             "frequency": 3,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+          "valueString": "Walk at a comfortable pace"
+        }
+      ],
+      "detail": {
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/care-plan-activity-category",
+              "code": "procedure",
+              "display": "Procedure"
+            }
+          ],
+          "text": "Observation"
+        },
+        "code": {
+          "text": "Exercise"
+        },
+        "description": "Walk daily at a comfortable pace for as long as you are able. Stop if you develop shortness of breath, chest pain, or palpatations.",
+        "status": "in-progress",
+        "scheduledTiming": {
+          "repeat": {
+            "boundsPeriod": {
+              "start": "2016-11-30",
+              "end": "2017-12-31"
+            },
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/careplan-activity-title",
+          "valueString": "Daily Step Count"
+        }
+      ],
+      "detail": {
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/care-plan-activity-category",
+              "code": "observation",
+              "display": "Observation"
+            }
+          ],
+          "text": "Observation"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "41950-7",
+              "display": "Number of steps in 24 hour Measured"
+            }
+          ],
+          "text": "Steps"
+        },
+        "description": "Record your daily total step count before going to bed each evening.",
+        "status": "in-progress",
+        "scheduledTiming": {
+          "repeat": {
+            "boundsPeriod": {
+              "start": "2016-11-30",
+              "end": "2017-12-31"
+            },
+            "frequency": 1,
             "period": 1,
             "periodUnit": "d"
           }
