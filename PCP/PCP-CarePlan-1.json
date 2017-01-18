@@ -12,7 +12,7 @@
   },
   "subject": {
     "reference": "Patient/CarePlan-Patient-1",
-    "display": "Gary Anyman"
+    "display": "Bob Anyman"
   },
   "status": "active",
   "description": "Manage Type 2 Diabetes",
@@ -258,12 +258,13 @@
           "coding": [
             {
               "system": "http://loinc.org",
-              "code": "2339-0",
-              "display": "Glucose [Mass/volume] in Blood"
+              "code": "14760-3",
+              "display": "Glucose [Moles/​volume] in Capillary blood --2 hours post meal"
             }
           ],
           "text": "Blood sugar level"
         },
+        "description": "Check your blood sugar level 2 hours after each meal.",
         "status": "in-progress",
         "scheduledTiming": {
           "repeat": {

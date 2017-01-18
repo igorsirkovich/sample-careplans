@@ -36,6 +36,22 @@
         "coding": [
           {
             "system": "http://snomed.info/sct",
+            "code": "159033005",
+            "display": "Dietitian"
+          }
+        ],
+        "text": "Dietitian"
+      },
+      "member": {
+        "reference": "Organization/Dietition-Organization-1",
+        "display": "Nutrition For You, LLC"
+      }
+    },
+    {
+      "role": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
             "code": "73265009",
             "display": "Nursing aid"
           }

@@ -1,0 +1,43 @@
+{
+  "resourceType": "Organization",
+  "id": "Dietition-Organization-1",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Nutrition For You, LLC</div>"
+  },
+  "name": "Nutrition For You, LLC",
+  "type": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/organization-type",
+        "code": "prov",
+        "display": "Healthcare Provider"
+      }
+    ],
+    "text": "Healthcare Provider"
+  },
+  "address": [
+    {
+      "use": "work",
+      "type": "both",
+      "line": [
+        "9999 Alamo Street"
+      ],
+      "city": "San Antonio",
+      "postalCode": "78209",
+      "state": "TX",
+      "country": "USA"
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "555-555-2055",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "nutrition.for.you@woohoo.com"
+    }
+  ]
+}

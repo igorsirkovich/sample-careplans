@@ -44,5 +44,9 @@
   "requester": {
     "reference": "Practitioner/CarePlan-Practitioner-1",
     "display": "Patricia Primary, MD"
+  },
+  "recipient": {
+    "reference": "Organization/Dietition-Organization-1",
+    "display": "Nutrition For You, LLC"
   }
 }
