@@ -12,4 +12,4 @@
 
 echo
 echo Loading $2 from $3/$4
-curl -X PUT $1/$2/$4 -H 'Content-type: application/json+fhir' -H 'Accept: application/json+fhir' --data @$3/$4.json
+curl -X PUT $1/$2/$4 -H 'Content-type: application/fhir+json' -H 'Accept: application/fhir+json' --data @$3/$4.json
