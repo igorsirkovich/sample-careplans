@@ -1,0 +1,69 @@
+{
+  "resourceType": "Goal",
+  "id": "Dietitian-Goal-1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/Goal"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Goal: Hemoglobin A1c &lt; 7.0</div></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/goal-target",
+      "measure": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "386619000",
+            "display": "Low sodium diet"
+          }
+        ],
+        "text": "Low sodium diet"
+      },
+      "valueQuantity": {
+        "value": "2300",
+        "comparator": "<",
+        "unit": "mg/day",
+        "system": "http://unitsofmeasure.org/",
+        "code": "mg/day"
+      }
+    }
+  ],
+  "startDate": "2016-11-30",
+  "status": "in-progress",
+  "priority": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/goal-priority",
+        "code": "high",
+        "display": "high"
+      }
+    ],
+    "text": "high"
+  },
+  "subject": {
+    "reference": "Patient/CarePlan-Patient-1",
+    "display": "Bob Anyman male 1954-09-17"
+  },
+  "author": {
+    "reference": "Dietitian-Practitioner-1",
+    "display": "Connie Chow"
+  },
+  "addresses": [
+    {
+      "reference": "Condition/CarePlan-HealthConcern-2",
+      "display": "Obesity"
+    }
+  ],
+  "description": {
+    "text": "Reduce sodium intake to < 2300 mg/day"
+  },
+  "note": [
+    {
+      "text": "Regularly monitor diet using moobile app diet tracker, patient installed MyFitnessPal."
+    }
+  ]
+}

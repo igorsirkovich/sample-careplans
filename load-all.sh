@@ -45,7 +45,10 @@
 . load-resource.sh $1 Goal PCP CarePlan-Goal-6
 
 # Dietitian resources
+. load-resource.sh $1 Practitioner Dietitian Dietitian-Practitioner-1
+. load-resource.sh $1 Goal Dietitian Dietitian-Goal-1
 . load-resource.sh $1 Organization Dietitian Dietitian-Organization-1
+. load-resource.sh $1 CareTeam Dietitian Dietitian-CareTeam-1
 . load-resource.sh $1 CarePlan Dietitian Dietitian-CarePlan-1
 
 # Podiatry resources

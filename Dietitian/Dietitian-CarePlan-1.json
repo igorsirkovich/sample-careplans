@@ -15,11 +15,15 @@
     "display": "Gary Anyman"
   },
   "status": "active",
-  "description": "Dietitian plan for Type 2 Diabetes",
+  "description": "Dietitian plan for Type 2 Diabetes and Obesity",
   "goal": [
     {
       "reference": "Goal/CarePlan-Goal-1",
       "display": "Hemoglobin A1c < 7.0"
+    },
+    {
+      "reference": "Goal/Dietitian-Goal-1",
+      "display": "Decreased sodium diet"
     }
   ],
   "addresses": [
@@ -38,7 +42,7 @@
   ],
   "careTeam": [
     {
-      "reference": "CareTeam/CarePlan-CareTeam-1"
+      "reference": "CareTeam/Dietitian-CareTeam-1"
     }
   ],
   "activity": [
@@ -48,22 +52,16 @@
           "coding": [
             {
               "system": "http://hl7.org/fhir/care-plan-activity-category",
-              "code": "observation",
-              "display": "Observation"
+              "code": "diet",
+              "display": "Diet"
             }
           ],
-          "text": "Observation"
+          "text": "Diet"
         },
         "code": {
-          "coding": [
-            {
-              "system": "http://loinc.org",
-              "code": "55284-4",
-              "display": "Blood pressure systolic and diastolic"
-            }
-          ],
-          "text": "Blood pressure systolic and diastolic"
+          "text": "Modify composition of meals/snacks"
         },
+        "description": "Replace reliance on fast food meals with healthy snacks and sack lunches.",
         "status": "in-progress",
         "scheduledTiming": {
           "repeat": {
@@ -84,22 +82,23 @@
           "coding": [
             {
               "system": "http://hl7.org/fhir/care-plan-activity-category",
-              "code": "observation",
-              "display": "Observation"
+              "code": "diet",
+              "display": "Diet"
             }
           ],
-          "text": "Observation"
+          "text": "Diet"
         },
         "code": {
           "coding": [
             {
-              "system": "http://loinc.org",
-              "code": "29463-7",
-              "display": "Body weight"
+              "system": "http://snomed.info/sct",
+              "code": "435581000124102",
+              "display": "Carbohydrate modified diet"
             }
           ],
-          "text": "Body weight"
+          "text": "Carbohydrate modified diet"
         },
+        "description": "Eliminate intake of sugary beverages (regular sodas/sweetened tea) and replace with water or sugar-free choices.",
         "status": "in-progress",
         "scheduledTiming": {
           "repeat": {
@@ -108,7 +107,185 @@
               "end": "2017-12-31"
             },
             "frequency": 1,
-            "period": 7,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    },
+    {
+      "detail": {
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/care-plan-activity-category",
+              "code": "diet",
+              "display": "Diet"
+            }
+          ],
+          "text": "Diet"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "436731000124100",
+              "display": "Decreased energy diet"
+            }
+          ],
+          "text": "Decreased calorie diet"
+        },
+        "description": "Reduce calorie intake to 1800 Kcal/day to reduce weight to goal of 206 lbs  over next 8 weeks.",
+        "status": "in-progress",
+        "scheduledTiming": {
+          "repeat": {
+            "boundsPeriod": {
+              "start": "2016-11-30",
+              "end": "2017-12-31"
+            },
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    },
+    {
+      "detail": {
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/care-plan-activity-category",
+              "code": "diet",
+              "display": "Diet"
+            }
+          ],
+          "text": "Diet"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "436991000124104",
+              "display": "Increased fiber diet"
+            }
+          ],
+          "text": "Increased fiber diet"
+        },
+        "description": "Recommend high fiber diet to increase satiety (e.g., replace white bread with whole grain options).",
+        "status": "in-progress",
+        "scheduledTiming": {
+          "repeat": {
+            "boundsPeriod": {
+              "start": "2016-11-30",
+              "end": "2017-12-31"
+            },
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    },
+    {
+      "detail": {
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/care-plan-activity-category",
+              "code": "diet",
+              "display": "Diet"
+            }
+          ],
+          "text": "Diet"
+        },
+        "code": {
+          "text": "Modify composition of meals/snacks"
+        },
+        "description": "Substitute fresh fruit for dessert and high-calorie bakery choices",
+        "status": "in-progress",
+        "scheduledTiming": {
+          "repeat": {
+            "boundsPeriod": {
+              "start": "2016-11-30",
+              "end": "2017-12-31"
+            },
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    },
+    {
+      "detail": {
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/care-plan-activity-category",
+              "code": "diet",
+              "display": "Diet"
+            }
+          ],
+          "text": "Diet"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "445301000124102",
+              "display": "Content-related nutrition education"
+            }
+          ],
+          "text": "Nutrition relationship to health/disease"
+        },
+        "description": "Education on relationship of carbohydrate intake on blood sugar values.",
+        "status": "in-progress",
+        "scheduledTiming": {
+          "repeat": {
+            "boundsPeriod": {
+              "start": "2016-11-30",
+              "end": "2017-12-31"
+            },
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        }
+      }
+    },
+    {
+      "detail": {
+        "category": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/care-plan-activity-category",
+              "code": "diet",
+              "display": "Diet"
+            }
+          ],
+          "text": "Diet"
+        },
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "445291000124103",
+              "display": "Nutrition-related skills education"
+            }
+          ],
+          "text": "Nutrition-related skills education"
+        },
+        "description": "Education on selecting healthy options for lunches and snacks to take to work.",
+        "status": "in-progress",
+        "scheduledTiming": {
+          "repeat": {
+            "boundsPeriod": {
+              "start": "2016-11-30",
+              "end": "2017-12-31"
+            },
+            "frequency": 1,
+            "period": 1,
             "periodUnit": "d"
           }
         }

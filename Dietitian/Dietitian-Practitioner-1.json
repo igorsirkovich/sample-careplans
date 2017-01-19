@@ -1,0 +1,34 @@
+{
+  "resourceType": "Practitioner",
+  "id": "Dietitian-Practitioner-1",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/Practitioner"
+    ]
+  },
+  "active": true,
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div>Connie Chow</div></div>"
+  },
+  "name": [
+    {
+      "use": "usual",
+      "family": "Chow",
+      "given": [
+        "Connie"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "555-2341",
+      "use": "mobile"
+    },
+    {
+      "system": "email",
+      "value": "connie.chow@woohoo.com"
+    }
+  ]
+}
